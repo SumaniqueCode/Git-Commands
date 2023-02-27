@@ -1,0 +1,43 @@
+For creating new project and repository.
+
+echo " write anything" >> filename.txt				// To create a text file
+git init 							// To create new repository
+git add filename 						// To add the file in git project
+git add *							// To add all the file in the git project
+git status							// To check the status of file in git project( whether committed or not)
+git commit -m "Your message"					// To commit changes in file and leave message.
+git config --global user.email "youremail@email.com"		// To add your github email
+git config --global user.name "yourusername"			// To add your github username
+git config --global user.password "yoyrpassword"		// To add password.
+git branch -M main						// To select main branch
+git remote add origin https://github.com/username/repo-name	// To add github repository in project
+git push -u origin main						// To push the files in the project
+
+
+For pushing file in existing repository
+
+git remote add origin https://github.com/username/repo-name
+git branch -M main
+git push -u origin main
+
+git clone username@host:/path/to/repository			// To clone/download the projects of github
+git log 							// To check the changes in the project
+q / z								// To exit git log
+
+
+ ====			    ====
+|git commit -m 'Initial commit'	|				// To undo the changes if not pushed.
+|git add filename		|
+|git commit --amend		|
+ ====			    ====
+git reset --hard sha-code-from-github				// To switch to previous version by removing all the changes.
+
+
+git checkout -b branch-name					// To create a branch
+git checkout main						// To switch from branch to main
+git branch -d branch-name					// To delete branch
+git push origin branch-name					// To push branch in github.
+git merge branch-name						// To merge a branch
+git pull / git pull origin branch-name				// To turn project in latest version
+
+git tag version(e.g: 1.0.0.0) commit-version-from-log 		// To add commit version tag
